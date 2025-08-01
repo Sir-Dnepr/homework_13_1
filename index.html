@@ -5,9 +5,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/main.css" rel="stylesheet" />
     <title>Homework 13.1</title>
 </head>
 <body>
-    <script type="text/javascript" src="js/__.js"></script>
+    <form action="/" method="post">
+        <h2>We Would like to help you</h2>
+        <label for="name">
+            <input type="text" name="name" id="name" placeholder="Name"/>
+            <span>Name required field</span>
+        </label>
+
+        <label for="message">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <span>Min count of symbols is 5</span>
+        </label>
+
+        <h3>How to answer you?</h3>
+
+        <label for="phone_number">
+            <input type="text" name="phone_number" id="phone_number" placeholder="Phone number"/>
+            <span>Phone number is not correct</span>
+        </label>
+
+        <label for="phone_number">
+            <input type="text" name="email" placeholder="Email"/>
+            <span>Email must have @ and a dot</span>
+        </label>
+
+        <input type="submit" value="Send message">
+    </form>
+
+    <script type="text/javascript" src="js/validation-form.js"></script>
 </body>
 </html>
