@@ -46,7 +46,7 @@ const validationForm = (target) => {
         const nameFieldNode = target.elements.namedItem(INPUT_NAME);
         let hasError = false;
 
-        if (validationName(nameValue)) {
+        if (nameValue?.trim() && validationName(nameValue)) {
             hideValidationErrorMessage(nameFieldNode);
         } else {
             showValidationErrorMessage(nameFieldNode);
